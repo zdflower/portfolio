@@ -1,6 +1,14 @@
 		body {
-			padding-top: 55px;		
+      background-color: lavenderblush;
 		}
+
+.espaciar {
+  padding-bottom: 20px;
+}
+#about, #portfolio, #contacto {
+     padding-top: 55px;
+     padding-bottom: 55px;
+}
     #about {
 			background-color: plum;
 		}
@@ -10,22 +18,29 @@
 		#contacto {
 			background-color: plum;
 		}
-		#sec5 {
-			background-color:  palegreen;
-		}		
 		#foot {
 			background-color: orchid;
 		}
 		#f1 {
 			padding-left: 15px;
+      padding-right: 15px;
 			background-color: orchid;
 		}
 		.thumbnail {
 			margin: 5px;
 		}
 		.portfolio-img {
-		width: 90%;
+      margin: 20px auto;
+		  width: 90%;
 		}
 #formulario-contacto {
-  padding-left: 65px;
+  padding-left: 5%;
+}
+
+#quote {
+  padding-top: 3%;
+}
+
+ul.nav li {
+  display: inline-block;
 }
