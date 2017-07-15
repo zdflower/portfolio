@@ -1,20 +1,30 @@
 body {
-		background-color: #e3e2db;
+      background-color: #e3e2db;
+}
+
+.container {
+  box-shadow: -1px 5px 5px 5px #888888; 
 }
 
 #about, #portfolio, #contacto {
-    padding: 55px;
+     padding: 75px;
 }
 
 #about, #contacto {
 			background-color: plum;
 		}
+
 #portfolio {
 			background-color: #fff6d5;
 		}
+
+#contacto {
+			background-color: plum;
+		}
+
 #foot, #f1 {
 			background-color: #a02c89;
-}
+		}
 
 #foot {
     color: #000;
@@ -22,56 +32,63 @@ body {
 }
 
 #f1 {
-    color: #ff80e5;
-	padding-left: 15px;
-    padding-top: 5px;
-}
-
-.thumbnail {
-			margin: 5px;
-		}
-
-.portfolio-img {
-      margin: 20px auto;
-		  width: 90%;
-}
-
-#formulario-contacto {
-  padding-left: 5%;
-}
-
-#quote {
-  padding-top: 3%;
+      color: #ff80e5;
+			padding-left: 15px;
+      padding-top: 5px;
 }
 
 .espaciar {
   padding-bottom: 20px;
 }
 
-/* quise poner .top-nav li a y no funciona, también había un problema porque en el js manipulaba el li y no el li a */
-/* antes con .navbar-default .navbar-nav li a funcionaba, se aplicaban los estilos que definí acá, pero si le saco a entonces no, usa unos estilos predeterminados que no sé cómo sobreescribir*/
+.thumbnail {
+			margin: 5px;
+		}
+		.portfolio-img {
+      margin: 20px auto;
+		  width: 90%;
+		}
+#formulario-contacto {
+  padding-left: 5%;
+}
 
-.navbar-default .navbar-nav li a{
+#about p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 20px;
+}
+
+#quote {
+  padding-top: 3%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+}
+blockquote footer {
+  font-size: 20px;
+  text-align: right;
+}
+
+h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.navbar-default .navbar-nav li a {
     color: beige;
-    /* background-color: #ddafe9;
-    border: 1px solid #ddafe9;*/
+    //background-color: #ddafe9;
+    //border: 1px solid #ddafe9;
 }
 
-.navbar-default .navbar-nav li.active a{
-    background-color: beige;
-    color: #a02c89;
-    border: 1px solid beige;
-} 
-
-/*
-#navAbout.active, #navPortfolio.active, #navContact.active {
+.navbar-default .navbar-nav li.active a {
     background-color: beige;
     color: #a02c89;
     border: 1px solid beige;
 }
+
+.nav li a {
+  display: inline-block;
+}
+/* from an article of Carol Skelly: Bootstrap Equal Height Columns 
+https://medium.com/wdstack/bootstrap-equal-height-columns-d07bc934eb27
 */
-
-/* from an article of Carol Skelly: Bootstrap Equal Height Columns */
 .row.display-flex {
   display: flex;
   flex-wrap: wrap;
